@@ -1,3 +1,5 @@
 *.mov filter=lfs diff=lfs merge=lfs -text
 public/assets/PLTW/PLTW[[:space:]]Recording.mov filter=lfs diff=lfs merge=lfs -text
 public/media/PLTW[[:space:]]Recording.mp4 filter=lfs diff=lfs merge=lfs -text
+.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
