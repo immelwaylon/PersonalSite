@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engineering on WIMMEL Portfolio Website</title>
+    <link>//localhost:1313/tags/engineering/</link>
+    <description>Recent content in Engineering on WIMMEL Portfolio Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+    <lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Small Project: KSC75 (Headphones) Detachable Cable Mod</title>
+      <link>//localhost:1313/projects/project-ksc75-mod/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/projects/project-ksc75-mod/</guid>
+      <description>Combined and modified various obj/stl files to quickly develop a functional mounting bracket for a female 2 pin jack. Soldered and glued the jack in for the complete functional mod.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/project-ksc75-mod/cover.jpg" />
+    </item>
+    
+    <item>
+      <title>Automatic Door Opening System</title>
+      <link>//localhost:1313/projects/project-autodoor/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/projects/project-autodoor/</guid>
+      <description>Collaborated with one of my peers to design and develop a sensor/arduino controlled automatic door system, reducing costs 90% compared to industry standards.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/project-autodoor/cover.png" />
+    </item>
+    
+    <item>
+      <title>Small Project: Moai Keycaps</title>
+      <link>//localhost:1313/projects/project-moaikey/</link>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/projects/project-moaikey/</guid>
+      <description>Combined and modified various obj/stl files to quickly develop functional 3D-printed moai keycaps with acceptable fitment and strength.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/project-moaikey/%20cover.png" />
+    </item>
+    
+  </channel>
+</rss>

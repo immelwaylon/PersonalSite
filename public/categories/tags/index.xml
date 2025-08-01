@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Waylon Immel Portfolio Website</title>
+    <link>//localhost:1313/categories/tags/</link>
+    <description>Recent content in Tags on Waylon Immel Portfolio Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+    <lastBuildDate>Fri, 22 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/categories/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Automatic Door Opening System</title>
+      <link>//localhost:1313/projects/project-lite-one/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/projects/project-lite-one/</guid>
+      <description>Collaborated with one of my peers to design and develop a sensor/arduino controlled automatic door system, reducing costs 90% compared to industry standards.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/project-lite-one/cover.png" />
+    </item>
+    
+  </channel>
+</rss>

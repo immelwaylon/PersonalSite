@@ -1,0 +1,23 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "WIMMEL Portfolio Website"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  #logo = "img/prom1.png"
+  description = "Waylon Immel's website for posting personal projects."
+  # copyright = "Copy, _right?_ :thinking_face:"
+  dateFormat = "2 January 2006"
+
+[params.author]
+  name = "Waylon Immel"
+  image = "img/prom4.png"
+  headline = "I post my projects here"
+  bio = "Engineering Student at UC Merced"
+   links = [
+     { envelope = "mailto:immelwaylon@gmail.com" },
+     { linkedin = "https://www.linkedin.com/in/wimmel/" },
+   ]

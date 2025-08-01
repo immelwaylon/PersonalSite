@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on WIMMEL Portfolio Website</title>
+    <link>//localhost:1313/tags/programming/</link>
+    <description>Recent content in Programming on WIMMEL Portfolio Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>GraphWar Line Generation Program</title>
+      <link>//localhost:1313/projects/project-graphwar/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/projects/project-graphwar/</guid>
+      <description>Coded a python program to generate scaled piecewise equations that go through user-inputted click positions in the game Graph War.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/project-graphwar/cover.png" />
+    </item>
+    
+    <item>
+      <title>Automatic Door Opening System</title>
+      <link>//localhost:1313/projects/project-autodoor/</link>
+      <pubDate>Fri, 22 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/projects/project-autodoor/</guid>
+      <description>Collaborated with one of my peers to design and develop a sensor/arduino controlled automatic door system, reducing costs 90% compared to industry standards.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/projects/project-autodoor/cover.png" />
+    </item>
+    
+  </channel>
+</rss>
