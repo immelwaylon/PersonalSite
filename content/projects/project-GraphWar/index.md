@@ -13,7 +13,7 @@ I created a python program that takes user mouse input and manipulates it to sca
 
 Below is a video showing graphwar gameplay for reference. Credit to [hueyfragic](https://www.youtube.com/@hueyfragic/featured) for the video.
 <video controls width="100%">
-  <source src="/static/media/curves.mp4" type="video/mp4">
+  <source src="static/media/curves.mp4" type="video/mp4">
   Your browser doesn't support HTML5 video.
 </video>
 
