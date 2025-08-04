@@ -12,10 +12,7 @@ draft: false
 I created a python program that takes user mouse input and manipulates it to scaled generate piecewise functions in order to optomize graph war gaming.
 
 Below is a video showing graphwar gameplay for reference. Credit to [hueyfragic](https://www.youtube.com/@hueyfragic/featured) for the video.
-<video controls width="100%">
-  <source src="static/media/curves.mp4" type="video/mp4">
-  Your browser doesn't support HTML5 video.
-</video>
+![]("/static/media/curves.mp4")
 
 ## The Basic Concept
 The line generation works by a simple concept. If you offset two abs functions (one inverted) by making it abs(x+1)-abs(x), it will make a portion of the line sloped, while the rest remains flat. This means we can add these functions to make a line have whatever slopes we want on whatever intervals.  Here is a [desmos graph](https://www.desmos.com/calculator/s95kprka39) that demonstrates the concept between -1 and 1. We can use this to automate the generation of a line that goes through all the points that we specify. Normally, we would have to shift the line up or down, referencing something like a y intercept. However, the line in graph war always comes from a character, so we on't even have to set a y offset to go through the points we want. The relative slopes are all we need.
