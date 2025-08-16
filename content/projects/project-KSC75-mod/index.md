@@ -16,8 +16,6 @@ The original files I used were a [mount for KSC75 2-pin mod](https://www.thingiv
 
 <div style="display: flex; gap: 10px;">
   <img src="./media/Small/2pin1.png" alt="image" style="width: 49%;">
-  <img src="/media/Small/2pin2.png" alt="image" style="width: 49%;">  
-  <img src="static/media/Small/2pin3.png" alt="image" style="width: 49%;"> 
-  <img src="/static/media/Small/2pin3.png" alt="image" style="width: 49%;"> 
-  <img src="./static/media/Small/2pin3.png" alt="image" style="width: 49%;"> 
+  <img src="./media/Small/2pin2.png" alt="image" style="width: 49%;">  
+  <img src="./media/Small/2pin3.png" alt="image" style="width: 49%;"> 
 </div>
