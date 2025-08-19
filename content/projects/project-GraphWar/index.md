@@ -1,6 +1,7 @@
+
 ---
 title: "GraphWar Line Generation Program"
-summary: "Coded a python program to generate scaled piecewise equations that go through user-inputted click positions in the game Graph War."
+summary: "Coded a python program to generate piecewise functions that go through clicked positions in the game Graph War."
 categories: ["Projects"]
 tags: [ "Programming", "Personal"]
 #externalUrl: ""
@@ -8,8 +9,8 @@ tags: [ "Programming", "Personal"]
 date: 2025-06-25
 draft: false
 ---
-## Extended Summary
-I created a python program that takes user mouse input and manipulates it to scaled generate piecewise functions in order to optomize graph war gaming.
+## Intro
+“Graphwar is an artillery game in which you must hit your enemies using mathematical functions. The trajectory of your shot is determined by the function you wrote, and your goal is to avoid the obstacles and your teammates and hit your enemies. The game takes place in a Cartesian Plane.” - [Catacorp](https://store.steampowered.com/search/?developer=Catacorp) Since this game requires highly precise functions to hit opponents, I decided using computers to streamline gameplay could be a good use of time. After some research, I wrote a simple python program to generate piecewise based on my clicks.
 
 Below is a video showing graphwar gameplay for reference. Credit to [hueyfragic](https://www.youtube.com/@hueyfragic/featured) for the video.
         <div class="video-container">
@@ -22,15 +23,15 @@ Below is a video showing graphwar gameplay for reference. Credit to [hueyfragic]
             </video>
         </div>
 
-## The Basic Concept
-The line generation works by a simple concept. If you offset two abs functions (one inverted) by making it abs(x+1)-abs(x), it will make a portion of the line sloped, while the rest remains flat. This means we can add these functions to make a line have whatever slopes we want on whatever intervals.  Here is a [desmos graph](https://www.desmos.com/calculator/s95kprka39) that demonstrates the concept between -1 and 1. We can use this to automate the generation of a line that goes through all the points that we specify. Normally, we would have to shift the line up or down, referencing something like a y intercept. However, the line in graph war always comes from a character, so we on't even have to set a y offset to go through the points we want. The relative slopes are all we need.
+## Line Generation Algorithm
+The line generation works by a simple concept. If you offset two abs functions (one inverted) by making it abs(x+1)-abs(x), it will make a portion of the line sloped, while the rest remains flat. This means we can add these functions to make a line have whatever slopes we want on whatever intervals.  Here is a [desmos graph](https://www.desmos.com/calculator/s95kprka39) that demonstrates the concept between -1 and 1. We can use this to automate the generation of a line that goes through all the points that we specify. Normally, we would have to shift the line up or down, referencing something like a y intercept. However, the line in graph war always comes from a character, so no y-offset is required. Relative slopes are all we need.
 
 ## My Process
 1. Programmed a line generation script, tested with set points in desmos
 2. Programmed a script to take mouse inputs based on terminal-printed instructions
 3. Programmed a script to convert mouse(screen location) inputs to cartesian coordinates. 
-4. I implemented an extra script to offset y values by a negligible amount if they overlapped, so a real line would be generated going roughly through every user-inputted point.
-5. Integrated each function together for a final working script
+4. Implemented an extra script to offset y values by a negligible amount if they overlapped, so a real line would be generated going roughly through every user-inputted point.
+5. Integrated all functions into a final working script with instructions printed in terminal
 
 I rewrote the entire thing from scratch 3-4 times trying to get it all working. 
 
@@ -38,7 +39,7 @@ I rewrote the entire thing from scratch 3-4 times trying to get it all working.
 [GitHub](https://github.com/immelwaylon/GraphWar-Line-Gen/tree/main)
 <details>
 <summary>Website Codeblock</summary>
-
+        
 ```python
 #Import libraries
 import time
@@ -216,8 +217,14 @@ while (not(stopCommand)):
 </details>
 
 ## Resulting Line Generation
-With this program, I was able to successfully generate accurate lines to easily win graph war games that would have otherwise been almost impossible.
+With this program, I was able to successfully generate accurate lines to easily win graph war games that would have otherwise been impossible or incredibly difficult.
 <div style="display: flex; gap: 10px;">
   <img src="/PersonalSite/media/GraphWar/GraphWar1.png" alt="Front" style="width: 49%;">
   <img src="/PersonalSite/media/GraphWar/GraphWar2.png" alt="Top Left" style="width: 49%;">  
 </div>
+
+
+
+
+
+
