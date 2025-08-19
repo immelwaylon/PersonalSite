@@ -15,5 +15,5 @@ The original files I used were a [mount for KSC75 2-pin mod](https://www.thingiv
 
 | | | |
 |---|---|---|
-| ![2pin1]({{ "media/Small/2pin1.png" | relURL }}) | ![2pin2]({{ "media/Small/2pin2.png" | relURL }}) | ![2pin3]({{ "media/Small/2pin3.png" | relURL }}) |
+| ![2pin1](/media/Small/2pin1.png) | ![2pin2](/media/Small/2pin2.png) | ![2pin3](/media/Small/2pin3.png) |
 
