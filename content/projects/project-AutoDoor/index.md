@@ -10,12 +10,12 @@ draft: false
 ---
 
 <video controls width="100%">
-  <source src="/media/PLTW Recording.mp4" type="video/mp4">
+  <source src="PersonalSite/media/PLTW_Recording.mp4" type="video/mp4">
   Your browser doesn't support HTML5 video.
 </video>
 
-## Extended Summary
-This was a high school project for the [PLTW](https://en.wikipedia.org/wiki/Project_Lead_the_Way) course, "Engineering Design and Development". My peer, Aaron Kosoff, and I went through the entire design and development process. We started by researching a problem, examining its current solutions, and deciding on a final innovation that could improve upon current solutions. We landed on an adhesive-mounted door opening system controlled by various sensors and an arduino, as it would reduce costs by a few orders of magnitude while preventing 100% of pathogen spread. Through extensive prototyping, we landed on an acceptable rough design that met our design requirements.
+## Intro
+For the [PLTW](https://en.wikipedia.org/wiki/Project_Lead_the_Way) course, "Engineering Design and Development", we were tasked with solving a problem through designing and developing a novel innovation. Me and my friend Aaron Kosoff. We started by researching a problem, examining its current solutions, and deciding on a final innovation that could improve upon current solutions. We landed on an adhesive-mounted door opening system controlled by various sensors and an arduino, as it would reduce costs by a few orders of magnitude while preventing 100% of pathogen spread. Through extensive prototyping, we landed on an acceptable rough design that met our design requirements.
 
 ## Research
 #### Problems
