@@ -10,7 +10,7 @@ draft: false
 ---
 
 <video controls width="100%">
-  <source src="PersonalSite/media/PLTW%Recording.mp4" type="video/mp4">
+  <source src="PersonalSite/media/PLTW_Recording.mp4" type="video/mp4">
   Your browser doesn't support HTML5 video.
 </video>
 
