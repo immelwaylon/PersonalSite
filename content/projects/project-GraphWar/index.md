@@ -13,7 +13,7 @@ I created a python program that takes user mouse input and manipulates it to sca
 
 Below is a video showing graphwar gameplay for reference. Credit to [hueyfragic](https://www.youtube.com/@hueyfragic/featured) for the video.
 
-!["video should be here"](curves.mp4)
+!["video should be here"](/PersonalSite/media/curves.mp4)
 
 ## The Basic Concept
 The line generation works by a simple concept. If you offset two abs functions (one inverted) by making it abs(x+1)-abs(x), it will make a portion of the line sloped, while the rest remains flat. This means we can add these functions to make a line have whatever slopes we want on whatever intervals.  Here is a [desmos graph](https://www.desmos.com/calculator/s95kprka39) that demonstrates the concept between -1 and 1. We can use this to automate the generation of a line that goes through all the points that we specify. Normally, we would have to shift the line up or down, referencing something like a y intercept. However, the line in graph war always comes from a character, so we on't even have to set a y offset to go through the points we want. The relative slopes are all we need.
@@ -211,6 +211,6 @@ while (not(stopCommand)):
 ## Resulting Line Generation
 With this program, I was able to successfully generate accurate lines to easily win graph war games that would have otherwise been almost impossible.
 <div style="display: flex; gap: 10px;">
-  <img src="/media/GraphWar/GraphWar1.png" alt="Front" style="width: 49%;">
-  <img src="/media/GraphWar/GraphWar2.png" alt="Top Left" style="width: 49%;">  
+  <img src="/PersonalSite/media/GraphWar/GraphWar1.png" alt="Front" style="width: 49%;">
+  <img src="/PersonalSite/media/GraphWar/GraphWar2.png" alt="Top Left" style="width: 49%;">  
 </div>
