@@ -1,4 +1,3 @@
-
 ---
 title: "GraphWar Line Generation Program"
 summary: "Coded a python program to generate piecewise functions that go through clicked positions in the game Graph War."
