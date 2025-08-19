@@ -10,7 +10,7 @@ draft: false
 ---
 
 <video controls width="100%">
-  <source src="PersonalSite/media/PLTW_Recording.mp4" type="video/mp4">
+  <source src="PersonalSite/media/PLTW%Recording.mp4" type="video/mp4">
   Your browser doesn't support HTML5 video.
 </video>
 
@@ -38,9 +38,9 @@ After that, we went through various mechanical prototypes. Between these prototy
 Below shows, in order, a front view of mount with components, a top right view of mount structure, and a top right view of mount with components. Shroud model was excluded from these images.
 
 <div style="display: flex; gap: 10px;">
-  <img src="/media/PLTW/Full%20Thing/Front.png" alt="Front" style="width: 49%;">
-  <img src="/media/PLTW/Full%20Thing/TopRight.png" alt="Top Left" style="width: 49%;">  
-  <img src="/media/PLTW/Full%20Thing/Top%20Right.png" alt="Top Left" style="width: 49%;">
+  <img src="PersonalSite/media/PLTW/Full%20Thing/Front.png" alt="Front" style="width: 49%;">
+  <img src="PersonalSite/media/PLTW/Full%20Thing/TopRight.png" alt="Top Left" style="width: 49%;">  
+  <img src="PersonalSite/media/PLTW/Full%20Thing/Top%20Right.png" alt="Top Left" style="width: 49%;">
 </div>
 
 ## Code Prototyping
