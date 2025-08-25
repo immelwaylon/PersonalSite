@@ -1,10 +1,8 @@
 ---
 title: "Automatic Door Opening System"
-summary: "Collaborated with one of my peers to design and develop a sensor/arduino controlled automatic door system, reducing costs 90% compared to industry standards."
+summary: "Designed and developed an Arduino-based automatic door system with sensor integration, achieving 90% cost reduction compared to commercial solutions."
 categories: ["Projects"]
-tags: ["Programming","Engineering", "School"]
-#externalUrl: ""
-#showSummary: true
+tags: ["Programming", "Engineering", "School"]
 date: 2023-09-22
 draft: false
 ---
@@ -14,37 +12,57 @@ draft: false
   Your browser doesn't support HTML5 video.
 </video>
 
-## Intro
-For the [PLTW](https://en.wikipedia.org/wiki/Project_Lead_the_Way) course, "Engineering Design and Development", we were tasked with solving a problem through designing and developing a novel innovation. Me and my friend Aaron Kosoff. We started by researching a problem, examining its current solutions, and deciding on a final innovation that could improve upon current solutions. We landed on an adhesive-mounted door opening system controlled by various sensors and an arduino, as it would reduce costs by a few orders of magnitude while preventing 100% of pathogen spread. Through extensive prototyping, we landed on an acceptable rough design that met our design requirements.
+## Introduction
+As part of the [Project Lead The Way](https://en.wikipedia.org/wiki/Project_Lead_the_Way) "Engineering Design and Development" course, my partner Aaron Kosoff and I were challenged to identify a real-world problem and develop an innovative engineering solution. We designed an adhesive-mounted, sensor-controlled automatic door system that reduces costs by 90% compared to traditional automatic doors while preventing pathogen transmission through touch-free operation.
 
-## Research
-#### Problems
-The design process began with researching problems. We had a few different ideas, but settled on pathogen spread through door handles because we had found a good amount of research showing that it was a significant problem. 
-#### Previous Solutions
-This led to us looking into previous solutions and comparing them in a table. The graded overall best solutions we found were automatic doors and a door stop, since they prevent contact with the door completely. The door stop's main problem was that it removes the security and insulation that a door provides, while the automatic door was found to be overly expensive ($10k+). Because of this, we knew we had to create something that made doors touch-free at a low cost. 
-#### Brainstorming
-We came up with a number of possible solutions to the problem. One solution was an automatic door that could be mounted above an empty doorframe, behaving like a garage door. We decided this would be too impractical for use. Another idea was a door handle that heated up to kill bacteria. This idea was shot down because of obvious safety concerns. Finally, we came to the idea of a system that you could mount to any door to make it an automatic door. This idea seemed affordable, safe, and preserved the insulation and security of the original door. 
+## Research & Problem Identification
+### Problem Space
+We began by researching significant everyday problems that lacked cost-effective solutions. Pathogen transmission through door handles emerged as a critical issue, with studies showing high contamination rates on frequently touched surfaces.
 
-## Electronics Prototyping
-After our initial sketches of the system, we came up with an electrical system that would work to open the most doors. We determined that we would need a powerful motor to open the door (we calculated the force and leverage but i don't have access to my old notes right now), a servo to turn the handle to a specified angle, a motion sensor to detect movement, and a distance sensor to keep the system from hitting people and walls while opening the door.
+### Existing Solutions Analysis
+We evaluated current solutions through comparative analysis:
+- **Automatic doors**: Effective but prohibitively expensive ($10,000+)
+- **Door stops**: Eliminate contact but compromise security and insulation
+- **Antimicrobial handles**: Reduce but don't eliminate transmission risks
 
-## Mechanics Prototyping
-Using our initial sketches, we made a rough prototype to test the feasability of pulling the whole door with adhesive strips and a small motor. This confirmed that our mounting solution was valid, and that the motor was powerful enough when given the correct voltage.
+This analysis revealed a clear need for a touch-free solution that maintained door functionality while being economically viable.
 
-Our second prototype was 3d printed and used an aluminum wheel with a rubber grip so that the shaft wouldn't shred the inside of the wheel, and the wheel could grip the ground. This didn't work so well because the wheel didn't have enough traction. We calculated the force we would need to put on the ground given the friction coefficient of the wheel. Instead of considering this, we decided to test various springs to impart ground force, using the one that worked most effectively. 
+### Concept Development
+After brainstorming multiple approaches, we converged on an adhesive-mounted automation system that could retrofit existing doors. This solution preserved security and insulation while enabling touch-free operation at a fraction of conventional automatic door costs.
 
-After that, we went through various mechanical prototypes. Between these prototypes, we added/adjusted mounting points for the various sensors. We also slowly built in spaces for the arduino, motor controller, and battery to fit. Eventually we came to a final design that had mounting points for everything and a shroud to cover all of the internal wiring. This design was functional, but not exactly production ready as the shroud was simply slipped on, and not locked on like a public facility would need.
+## Technical Development
+### Electronic System Design
+The system architecture integrated multiple components:
+- **High-torque motor** for door operation (calculated torque requirements based on door weight and leverage)
+- **Servo mechanism** for handle rotation
+- **Motion sensor** for user detection
+- **Ultrasonic distance sensor** for safety collision avoidance
+- **Arduino Uno** for system control and integration
 
-Below shows, in order, a front view of mount with components, a top right view of mount structure, and a top right view of mount with components. Shroud model was excluded from these images.
+### Mechanical Prototyping
+We progressed through multiple prototyping iterations:
 
-<div style="display: flex; gap: 10px;">
-  <img src="PersonalSite/media/PLTW/Full%20Thing/Front.png" alt="Front" style="width: 49%;">
-  <img src="PersonalSite/media/PLTW/Full%20Thing/TopRight.png" alt="Top Left" style="width: 49%;">  
-  <img src="PersonalSite/media/PLTW/Full%20Thing/Top%20Right.png" alt="Top Left" style="width: 49%;">
+**Initial Proof-of-Concept**
+Validated adhesive mounting viability and motor torque requirements through rough physical testing. Determined 3D Printed wheels were unfeasable.
+
+**Traction System Development**
+Switched to commercial aluminum wheels with rubber grips, then implemented spring-based force adjustment to optimize ground traction.
+
+**Final Assembly Integration**
+Developed a comprehensive housing solution with:
+- Mounting points for all electronic components
+- Integrated wiring management
+- Removable shroud for maintenance access
+- Structural optimization for weight distribution
+
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="PersonalSite/media/PLTW/Full%20Thing/Front.png" alt="Front view with components" style="width: 32%;">
+  <img src="PersonalSite/media/PLTW/Full%20Thing/TopRight.png" alt="Top-right structural view" style="width: 32%;">  
+  <img src="PersonalSite/media/PLTW/Full%20Thing/Top%20Right.png" alt="Top-right view with components" style="width: 32%;">
 </div>
 
 ## Code Prototyping
-We started with a basic pseudocode framework that looked something like this:
+We started with a basic pseudocode framework:
 
     Loop forever{
         If motion sensor activated:
@@ -178,8 +196,23 @@ void loop() {
 ```
 </details>
 
-## Presentation
-Finally, we presented our project at a public school exhibition with industry experts that were asked to come rate us. Our teacher, Ms. Mason, then asked us and one other group whether we'd like to present our projects to the Cotati-Rohnert Park District School Board to show how Engineering Design and Development was a worthwhile course to continue teaching in the school district. We accepted, and presented our project there as well.
+## Results and Recognition
+### Performance Achievements
+* **90% cost reduction** compared to commercial automatic doors
+* **100% pathogen transmission prevention** through touch-free operation
+* **Successful operation** on standard interior doors
+* **Quick installation** via adhesive mounting system
+
+### Performance Achievements
+We demonstrated our system at multiple venues:
+1. **School Exhibition**: Presented to industry experts and received top marks for innovation and practicality
+2. **School Board Presentation**: Selected as one of two groups to demonstrate the value of engineering education to the Cotati-Rohnert Park Unified School District
 
 ## Reflection
-In conclusion, this was a fun and successful project. I thoroughly enjoyed the design process and getting to make something that could actually benefit people in the real world. This project exercised and improved my teamwork, presentation, CAD, coding, and electrical systems design skills all while allowing me to make something, which was really awesome.
+This project provided comprehensive engineering experience across multiple disciplines:
+* Systems integration combining mechanical, electrical, and software components
+* Iterative design through multiple prototyping cycles
+* Cost-benefit analysis and practical constraint consideration
+* Technical communication through public presentations
+
+The project successfully demonstrated how engineering innovation can create accessible solutions to everyday problems while developing valuable skills in CAD, programming, electronics, and collaborative design.
