@@ -8,7 +8,7 @@ draft: false
 ---
 
 <video controls width="100%">
-  <source src="PersonalSite/media/PLTW_Recording.mp4" type="video/mp4">
+  <source src="/PersonalSite/media/PLTW_Recording.mp4" type="video/mp4">
   Your browser doesn't support HTML5 video.
 </video>
 
@@ -54,7 +54,7 @@ To ensure the mounting system could withstand repeated operational stresses, I u
 * **Analysis**: The simulation identified high-stress concentration points, visualized in red, which indicated potential areas for failure under load.
 * **Iterative Design**: Based on the results, I added strategic fillets and reinforced thin cross-sections in the 3D model. This process significantly increased the factor of safety without adding excessive material or weight, ensuring long-term durability.
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="PersonalSite/media/PLTW/FullThing/Sim1_9.81N_Upwards_Front.png" alt="Simulation" style="width: 32%;">
+  <img src="/PersonalSite/media/PLTW/FullThing/Sim1_9.81N_Upwards_Front.png" alt="Simulation" style="width: 32%;">
 </div>
 
 **Final Assembly Integration**
@@ -65,9 +65,9 @@ Developed a comprehensive housing solution with:
 - Structural optimization for weight distribution
 
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="PersonalSite/media/PLTW/FullThing/Front.png" alt="Front view with components" style="width: 32%;">
-  <img src="PersonalSite/media/PLTW/FullThing/TopRight.png" alt="Top-right structural view" style="width: 32%;">  
-  <img src="PersonalSite/media/PLTW/FullThing/Top_Right.png" alt="Top-right view with components" style="width: 32%;">
+  <img src="/PersonalSite/media/PLTW/FullThing/Front.png" alt="Front view with components" style="width: 32%;">
+  <img src="/PersonalSite/media/PLTW/FullThing/TopRight.png" alt="Top-right structural view" style="width: 32%;">  
+  <img src="/PersonalSite/media/PLTW/FullThing/Top_Right.png" alt="Top-right view with components" style="width: 32%;">
 </div>
 
 ## Code Prototyping
