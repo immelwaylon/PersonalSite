@@ -48,6 +48,15 @@ Validated adhesive mounting viability and motor torque requirements through roug
 **Traction System Development**
 Switched to commercial aluminum wheels with rubber grips, then implemented spring-based force adjustment to optimize ground traction.
 
+**Mechanical Optimization**
+To ensure the mounting system could withstand repeated operational stresses, I used Fusion 360's static stress simulation to validate and refine the design.
+* **Simulation Parameters**: Applied a 9.81 N (1 kgf) load upward on the motor mount to simulate the reactive force generated when the wheel pulls against the floor to open a door.
+* **Analysis**: The simulation identified high-stress concentration points, visualized in red, which indicated potential areas for failure under load.
+* **Iterative Design**: Based on the results, I added strategic fillets and reinforced thin cross-sections in the 3D model. This process significantly increased the factor of safety without adding excessive material or weight, ensuring long-term durability.
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="PersonalSite/media/PLTW/FullThing/Sim1_9.81N_Upwards_Front.png" alt="Simulation" style="width: 32%;">
+</div>
+
 **Final Assembly Integration**
 Developed a comprehensive housing solution with:
 - Mounting points for all electronic components
@@ -56,9 +65,9 @@ Developed a comprehensive housing solution with:
 - Structural optimization for weight distribution
 
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="PersonalSite/media/PLTW/Full%20Thing/Front.png" alt="Front view with components" style="width: 32%;">
-  <img src="PersonalSite/media/PLTW/Full%20Thing/TopRight.png" alt="Top-right structural view" style="width: 32%;">  
-  <img src="PersonalSite/media/PLTW/Full%20Thing/Top%20Right.png" alt="Top-right view with components" style="width: 32%;">
+  <img src="PersonalSite/media/PLTW/FullThing/Front.png" alt="Front view with components" style="width: 32%;">
+  <img src="PersonalSite/media/PLTW/FullThing/TopRight.png" alt="Top-right structural view" style="width: 32%;">  
+  <img src="PersonalSite/media/PLTW/FullThing/Top_Right.png" alt="Top-right view with components" style="width: 32%;">
 </div>
 
 ## Code Prototyping
@@ -81,7 +90,7 @@ We started with a basic pseudocode framework:
 We researched how to use C++ to recieve and send signals through an Arduino. Through a few iterations, and using the pseudocode as a guide, we eventually developed the following code.
 
 <details>
-<summary>Code</summary>
+<summary>Click to expand final code</summary>
 
 ```c++
 #include <Servo.h>
