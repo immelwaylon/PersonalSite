@@ -54,7 +54,7 @@ To ensure the mounting system could withstand repeated operational stresses, I u
 * **Analysis**: The simulation identified high-stress concentration points, visualized in red, which indicated potential areas for failure under load.
 * **Iterative Design**: Based on the results, I added strategic fillets and reinforced thin cross-sections in the 3D model. This process significantly increased the factor of safety without adding excessive material or weight, ensuring long-term durability.
 <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="/PersonalSite/media/PLTW/FullThing/Sim1_9.81N_Upwards_Front.png" alt="Simulation" style="width: 32%;">
+  <img src="/PersonalSite/media/PLTW/Simulation/Sim1_9.81N_Upwards_Front.png" alt="Simulation" style="width: 32%;">
 </div>
 
 **Final Assembly Integration**
@@ -212,7 +212,7 @@ void loop() {
 * **Successful operation** on standard interior doors
 * **Quick installation** via adhesive mounting system
 
-### Performance Achievements
+### Presentations
 We demonstrated our system at multiple venues:
 1. **School Exhibition**: Presented to industry experts and received top marks for innovation and practicality
 2. **School Board Presentation**: Selected as one of two groups to demonstrate the value of engineering education to the Cotati-Rohnert Park Unified School District
