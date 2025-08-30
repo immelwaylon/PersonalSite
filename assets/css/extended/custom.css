@@ -1,0 +1,4 @@
+/* Make tags list one per line */
+section.flex.flex-wrap.max-w-prose > article {
+  width: 100% !important;
+}
