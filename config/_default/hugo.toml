@@ -39,3 +39,6 @@ enableEmoji = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[params]
+  custom_css = ["css/extended/custom.scss"]

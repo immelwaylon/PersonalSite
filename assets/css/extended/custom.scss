@@ -1,5 +1,21 @@
-/* One tag per line */
+/* Force tags to display one per line */
 section.flex.flex-wrap.max-w-prose > article {
   flex: 0 0 100% !important;
   max-width: 100% !important;
+  margin-bottom: 1rem;
+}
+
+/* Improve spacing and appearance */
+section.flex.flex-wrap.max-w-prose {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+section.flex.flex-wrap.max-w-prose > article h2 {
+  margin-bottom: 0;
+}
+
+/* Ensure proper spacing between tag name and count */
+section.flex.flex-wrap.max-w-prose > article h2 .text-base {
+  margin-left: 0.25rem;
 }
