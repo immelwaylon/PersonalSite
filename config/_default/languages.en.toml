@@ -15,7 +15,7 @@ title = "WIMMEL Portfolio Website"
 [params.author]
   name = "Waylon Immel"
   image = "img/prom4.png"
-  headline = "I post my projects here"
+  headline = "Feel free to reach out if anything here interests you"
   bio = "Engineering Student at UC Merced"
    links = [
      { envelope = "mailto:immelwaylon@gmail.com" },
