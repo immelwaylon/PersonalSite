@@ -12,16 +12,16 @@ draft: false
 [Graph War](https://store.steampowered.com/app/1899700/Graphwar/) is an artillery game where players use mathematical functions to launch projectiles at opponents. The trajectory of each shot is determined by the function you write, requiring extreme precision to avoid obstacles and hit targets. Manual function writing often leads to missed shots due to estimation errors.
 
 To solve this, I developed a Python program that automatically generates precise piecewise functions based on user-clicked positions, ensuring accurate shots every time.
+<!--
         <div class="video-container">
             <video controls>
-                <!-- Try absolute path first -->
                 <source src="https://immelwaylon.github.io/PersonalSite/media/curves.mp4" type="video/mp4">
-                <!-- Fallback to relative path -->
                 <source src="/PersonalSite/media/curves.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 *Gameplay footage courtesy of [hueyfragic](https://www.youtube.com/@hueyfragic/featured)*
+-->
 
 ## Line Generation Algorithm
 The solution uses opposing absolute value functions (e.g., |x+1| - |x|) to create custom slopes on specific intervals while keeping other sections flat. By combining these functions, the program constructs a piecewise function that passes exactly through user-specified points given the correct y-offset. 
