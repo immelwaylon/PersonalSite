@@ -42,41 +42,34 @@ The most challenging aspect was implementing multithreading to manage simultaneo
 ## Final Code
 [View full code on GitHub](https://github.com/immelwaylon/GraphWar-Line-Gen/tree/main)
 <details>
-<summary>Key Code Excerpt</summary>
+<summary>Main Control Loop</summary>
         
 ```python
 
-#Output ABS function piecewise line
-def output_abs_line(locations):
-    xList = []
-    yList = []
 
-    for location in (locations):       
-        xList.append(location[0])
-        yList.append(location[1])
-        
-    slopeList = [0]*(len(xList))
+stopCommand = False
+#Repeat program until asked to stop
+while (not(stopCommand)):
+    #Get mouse input
+    mouse_input()
+    #Sort points
+    pixelList.sort()
+    #Translate points to scaled cartesian coordinates
+    finalList = translate_points(xScale, yScale, corner1, corner2)
+    #Fix X coordinate repetition
+    finalList = discontinuity_fix(finalList)
 
-    #Find all slopes
-    for i in range (len(xList)-1):
-        slopeList[i] = ((yList[i]-yList[i+1]) / (xList[i] - xList[i+1]))
+    #Output
+    for i in finalList:
+        print(i)
+    print()
+    output_abs_line(finalList)
 
-    #Print equation of line going through points
-    for i in range (len(xList)-1):
-        slope = slopeList[i]
-        x = xList[i]
-        x2 = xList[i+1]
-        
-        if (slope<=0):
-            print ("+ ((abs(" + str(round((slope), rounding)) + "x +" + str(round(x2*(abs(slope)), rounding)) + ")-abs(" + str(round((slope), rounding)) + "x +" + str(round(x*abs(slope), rounding)) + "))/2)", end='')
-        else:
-            print ("- ((abs(" + str(round((slope), rounding)) + "x +" + str(round(-x2*(abs(slope)), rounding)) + ")-abs(" + str(round((slope), rounding)) + "x +" + str(round(-x*abs(slope), rounding)) + "))/2)", end='')
-        locations.clear()  # Clear the list after calculation
+    #Reset old pixel data
+    pixelList = []
 
-#Generate a smooth line going through the specified points
-def generate_smooth_line():
-    print("WIP")
-```
+    #Ask to stop
+    stopCommand = (not(input("\nContinue? (y/n) ") == "y"))
 </details>
 
 ## Results
