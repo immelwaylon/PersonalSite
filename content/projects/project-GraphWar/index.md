@@ -45,8 +45,6 @@ The most challenging aspect was implementing multithreading to manage simultaneo
 <summary>Main Control Loop</summary>
         
 ```python
-
-
 stopCommand = False
 #Repeat program until asked to stop
 while (not(stopCommand)):
@@ -70,6 +68,8 @@ while (not(stopCommand)):
 
     #Ask to stop
     stopCommand = (not(input("\nContinue? (y/n) ") == "y"))
+```
+
 </details>
 
 ## Results
